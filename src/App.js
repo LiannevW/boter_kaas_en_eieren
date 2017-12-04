@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App" >
 
       <div>
-        <h1>Tic Tac Too</h1>
+        <h1>Tic Tac Toe</h1>
       </div>
 
       <Winner />
