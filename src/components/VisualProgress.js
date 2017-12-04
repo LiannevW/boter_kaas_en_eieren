@@ -1,14 +1,19 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
+import turnAction from '../action/Turn'
 
 
 class VisualProgress extends PureComponent {
+
   render() {
     return (
       <div>
           <table>
             <tr id="row1">
-              <td className="square">{this.props.progress[0]}</td>
+            <button className="square" onClick={() => alert('click')}>
+            {this.props.value}
+            </button>
+
               <td className="square">{this.props.progress[1]}</td>
               <td className="square">{this.props.progress[2]}</td>
             </tr>
@@ -33,4 +38,6 @@ const mapStateToProps = (state) => {
       progress: state.turns
   }
 }
-export default connect(mapStateToProps)(VisualProgress)
+const mapDispatchToProps = {turnAction: turnAction}
+
+export default connect(mapStateToProps,mapDispatchToProps)(VisualProgress)
