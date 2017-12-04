@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NextStep from './components/NextStep'
+import VisualProgress from './components/VisualProgress'
 
 class App extends Component {
   render() {
@@ -13,25 +14,7 @@ class App extends Component {
 
       <NextStep />
 
-      <div>
-          <table>
-            <tr id="row1">
-              <td className="square">X</td>
-              <td className="square">O</td>
-              <td className="square"></td>
-            </tr>
-            <tr id="row2">
-              <td className="square"></td>
-              <td className="square">X</td>
-              <td className="square"></td>
-            </tr>
-            <tr id="row3">
-              <td className="square"></td>
-              <td className="square">O</td>
-              <td className="square">X</td>
-            </tr>
-          </table>
-        </div>
+      <VisualProgress />
 
       </div>
     );
