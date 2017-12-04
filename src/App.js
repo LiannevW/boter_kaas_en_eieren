@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import NextStep from './components/NextStep'
+import Winner from './components/Winner'
 import VisualProgress from './components/VisualProgress'
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <h1>Tic Tac Too</h1>
       </div>
 
-      <NextStep />
+      <Winner />
 
       <VisualProgress />
 
